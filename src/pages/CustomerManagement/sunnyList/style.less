@@ -1,0 +1,93 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../../utils/utils.less';
+
+.tableList {
+  .tableListOperator {
+    margin-bottom: 16px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      display: flex;
+      margin-right: 0;
+      margin-bottom: 24px;
+      > .ant-form-item-label {
+        width: 90px;
+        padding-right: 8px;
+        line-height: 32px;
+      }
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    display: block;
+    margin-bottom: 24px;
+    white-space: nowrap;
+    float:right; 
+  }
+}
+
+.distributeForm {
+  :global {
+    .ant-form-item {
+      display: flex;
+      margin-right: 0;
+      margin-bottom: 0px;
+      > .ant-form-item-label {
+        width: auto;
+        padding-right: 0px;
+        line-height: 32px;
+      }
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}
+
+.textellipsis{
+  width:100px; /*假设，5个字符的宽度是50*/
+  white-space:nowrap; /*禁止换行*/
+  text-overflow:ellipsis; /*文本超出隐藏*/
+  -o-text-overflow:ellipsis;/*跟上面一样，只是为了兼容其他浏览器*/
+  overflow: hidden; /*隐藏，跟text-overflow配合使用*/
+}
+
+.fieldStyle{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.sucessStyle{
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lightRed{
+  background-color: #ffcdd2;
+}

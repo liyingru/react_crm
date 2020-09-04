@@ -1,0 +1,48 @@
+@import '~antd/es/style/themes/default.less';
+
+.formStyle {
+  :global {
+    .ant-form-item {
+      display: flex;
+      margin-right: 0;
+      margin-bottom: 8px;
+      > .ant-form-item-label {
+          min-width: 90px;
+      //   width: auto;
+      //   padding-right: 8px;
+        line-height: 28px;
+      }
+      .ant-form-item-control {
+        line-height: 28px;
+      }
+    }
+  //   .ant-form-item-control-wrapper {
+  //     flex: 1;
+  //   }
+  }
+}
+
+.titleFontStyle {
+  &:extend(.contentSpeceTop);
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+.infoItem{
+  display: flex;
+  align-items: center;
+}
+
+.editingIcon{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.productInfoStyle{
+  display: inline;
+}

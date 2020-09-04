@@ -1,0 +1,10 @@
+.contentCardStyle {
+  display: flex;
+  border-radius: 10px;
+}
+.contentCardInfoStyle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: bold;
+}

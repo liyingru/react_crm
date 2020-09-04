@@ -1,0 +1,88 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../../utils/utils.less';
+
+.tableList {
+  .tableListOperator {
+    margin-bottom: 16px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      display: flex;
+      margin-right: 0;
+      margin-bottom: 24px;
+      > .ant-form-item-label {
+        width: 100px;
+        padding-right: 8px;
+        line-height: 32px;
+      }
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    display: block;
+    margin-bottom: 24px;
+    white-space: nowrap;
+  }
+}
+
+.distributeForm {
+  :global {
+    .ant-form-item {
+      display: flex;
+      margin-right: 0;
+      margin-bottom: 0px;
+      > .ant-form-item-label {
+        width: auto;
+        padding-right: 0px;
+        line-height: 32px;
+      }
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}
+
+.lightGreen{
+  background-color: #c8e6c9;
+}
+.lightYellow{
+  background-color: #fff9c4;
+}
+.lightRed{
+  background-color: #ffcdd2;
+}
+
+
+.innerHeader:global(.ant-page-header){
+  padding: 0 24px 16px 24px !important;
+}
+
+
+
+.outerHeader:global(.ant-page-header){
+  padding: 16px 24px 0 24px !important;
+}

@@ -1,0 +1,29 @@
+.titleFontStyle {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.headerViewStyle {
+  display: flex;
+  justify-content: space-between;
+}
+.headerButtomStyle {
+  padding-top: 5px;
+  padding-right: 0%;
+}
+.contentCardStyle {
+  display: flex;
+  padding-left: 20px;
+  top: 15px;
+  bottom: 15px;
+  padding-right: 20px;
+  width: 100%;
+  background-color: #dcdcdc;
+  border-radius: 20px;
+}
+.showAddNewDynamic {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

@@ -1,0 +1,61 @@
+@import '~antd/es/style/themes/default.less';
+
+.headerMaxTitle {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  
+  .headerMinTitle {
+    margin-bottom: 0px;
+    bottom: 0px;
+    font-size: 12px;
+  }
+
+  .rt_content{
+    display: flex;
+    line-height: 30px;
+    position: relative;
+    .labelName{
+      width: 100px;
+      color: rgba(0, 0, 0, 0.85);
+      text-indent: 20px;
+    }
+  }
+  .newStore{
+    display: flex;
+  }
+  .addStoreBt{
+    position: absolute;
+    left: 330px;
+    top: -2px;
+  }
+
+  .tableListForm {
+    :global {
+      .ant-form-item {
+        display      : flex;
+        margin-right : 0;
+        margin-bottom: 24px;
+  
+        >.ant-form-item-label {
+          width        : 100px;
+          padding-right: 8px;
+          line-height  : 32px;
+        }
+  
+        .ant-form-item-control {
+          line-height: 32px;
+        }
+      }
+  
+      .ant-form-item-control-wrapper {
+        flex: 1;
+      }
+    }
+  
+    .submitButtons {
+      display      : block;
+      margin-bottom: 24px;
+      white-space  : nowrap;
+    }
+  }

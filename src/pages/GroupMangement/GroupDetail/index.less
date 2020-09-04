@@ -1,0 +1,43 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+  width: 100%;
+  background: @component-background;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoItem{
+  display: flex;
+  align-items: center;
+}
+
+.editingIcon{
+  display: flex;
+  align-items: center;
+}
+
+.areaItem{
+  display: flex;
+  flex-direction: column;
+}
+
+.journal{
+  border-top:2px solid #ccc;
+  padding:20px 0 5px 0 ;
+  display: flex;
+  flex-direction: column;
+  .title{
+    color: orange;
+  }
+  .title,.content{
+    width:600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    span{
+      width: 300px;
+      text-align: center;
+    }
+  }
+}

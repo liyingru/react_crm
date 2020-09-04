@@ -1,0 +1,3 @@
+.contentViewStyle {
+  display: flex;
+}

@@ -1,0 +1,154 @@
+[{
+    "path": "/dashboardWorkplace",
+    "name": "工作台",
+    "icon": "pie-chart"
+  },
+  {
+    "path": "/claimTableList",
+    "name": "线索公海",
+    "icon": "eye"
+  },
+  {
+    "path": "/leads",
+    "name": "我的线索",
+    "icon": "apartment",
+    "children": [{
+      "path": "/leads/newLeads",
+      "name": "新建线索"
+    }, {
+      "path": "/leads/leadsManagement",
+      "name": "线索管理"
+    }]
+  },
+  {
+    "path": "/demand/demandManagement",
+    "name": "有效单管理",
+    "icon": "apartment"
+  },
+  {
+    "path": "/customer",
+    "name": "客户管理",
+    "icon": "team",
+    "children": [{
+      "path": "/customer/newCustomer",
+      "name": "新建客户"
+    }, {
+      "path": "/customer/customerManagement",
+      "name": "客户管理"
+    }]
+  },
+  {
+    "path": "/order",
+    "name": "订单管理",
+    "icon": "switcher",
+    "children": [{
+      "path": "/order/newOrder",
+      "name": "新建订单"
+    }, {
+      "path": "/order/orderManagement",
+      "name": "订单管理"
+    }]
+  },
+  {
+    "path": "/store",
+    "name": "商家管理",
+    "icon": "shop",
+    "children": [{
+      "path": "/store/storeDetails",
+      "name": "商家明细"
+    }]
+  },
+  {
+    "path": "/group",
+    "name": "分组管理",
+    "icon": "smile",
+    "children": [{
+      "path": "/group/grouphome",
+      "name": "分组管理"
+    }, {
+      "path": "/group/groupnew",
+      "name": "新建分组"
+    }]
+  },
+  {
+    "path": "/money",
+    "name": "回款管理",
+    "icon": "smile",
+    "children": [{
+      "path": "/money/moneyhome",
+      "name": "回款管理"
+    }]
+  },
+  {
+    "path": "/dataConfig",
+    "name": "数据配置",
+    "icon": "smile",
+    "children": [{
+      "path": "/dataConfig/customerFromConfig",
+      "name": "数据配置-客资来源"
+    },
+    {
+      "path": "/dataConfig/activityManagement",
+      "name": "数据配置-投放活动"
+    }]
+  },
+  {
+    "path": "/system",
+    "name": "系统管理",
+    "icon": "solution",
+    "children": [{
+        "path": "/system/companyManagement",
+        "name": "公司管理"
+      },
+      {
+        "path": "/system/structureManagement",
+        "name": "部门管理"
+      },
+      {
+        "path": "/system/roleManagement",
+        "name": "角色管理"
+      },
+      {
+        "path": "/system/positionManagement",
+        "name": "职位管理"
+      },
+      {
+        "path": "/system/userManagement",
+        "name": "用户管理"
+      },
+      {
+        "path": "/system/menuManagement",
+        "name": "菜单管理"
+      }
+    ]
+  },
+  {
+    "path": "/task",
+    "name": "任务管理",
+    "icon": "project",
+    "children": [{
+        "path": "/task/tasklist",
+        "name": "任务列表"
+      },
+      {
+        "path": "/task/newtask",
+        "name": "新建任务"
+      }
+
+    ]
+  },
+  {
+    "path": "/targetManagement",
+    "name": "目标管理",
+    "icon": "project",
+    "children": [{
+        "path": "/targetManagement/customerServiceTarget",
+        "name": "客服目标"
+      },
+      {
+        "path": "/targetManagement/salesTarget",
+        "name": "销售目标"
+      }
+    ]
+  },
+]

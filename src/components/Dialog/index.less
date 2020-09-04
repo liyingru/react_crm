@@ -1,0 +1,41 @@
+@import '~antd/es/style/themes/default.less';
+
+.dialog{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: auto;
+    outline: 0;
+    background: rgba(0,0,0,.6);
+    -webkit-overflow-scrolling: touch;
+    transform: scale(0, 0);
+    .dialog_content {
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -250px;
+      margin-top: -250px;
+      transition: all .35s cubic-bezier(0.43,0.14,0.34,1.6);
+      -webkit-transition: all .35s cubic-bezier(0.43,0.14,0.34,1.6);
+      transform: scale(0, 0);
+      background: transparent;
+      // background: #fff;
+    }
+   
+}
+.acitvePar{
+  transform: scale(1, 1) !important;
+  .acitve{
+    transform: scale(1, 1) !important;
+    line-height: 500px;
+    text-align: center;
+  }
+  img{
+    max-width: 100%;
+  }
+}

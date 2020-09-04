@@ -1,0 +1,96 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+  width: 100%;
+  background: @component-background;
+}
+
+.boxFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxInline {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.boxInLineBottom {
+  &:extend(.boxInline);
+  display: inline-block;
+}
+
+.headerMaxTitle {
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-right: 20px;
+}
+
+.headerMinTitle {
+  margin-bottom: 0px;
+  bottom: 0px;
+  font-size: 12px;
+}
+
+.topbutton{
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      display      : flex;
+      margin-right : 0;
+      margin-bottom: 0px;
+
+      >.ant-form-item-label {
+        width        : 100px;
+        padding-right: 0px;
+        line-height  : 32px;
+      }
+
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+
+  .submitButtons {
+    display      : block;
+    margin-bottom: 24px;
+    white-space  : nowrap;
+  }
+}
+
+
+.picWrap{
+  position: relative;
+  margin-right: -10px;
+  .deleteBt{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    top: -20px;
+  }
+}
+
+.productWrap{
+  position: relative;
+  margin-right: -10px;
+  .deleteBt{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+    top: 30px;
+  }
+}
+

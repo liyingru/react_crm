@@ -1,0 +1,121 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../utils.less';
+
+.main {
+  width: 100%;
+  background: @component-background;
+}
+
+
+.tableList {
+  display: flex;
+  flex-direction: row; 
+  .tableListOperator {
+    margin-bottom: 16px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      display: flex;
+      margin-right: 0;
+      margin-bottom: 24px;
+      > .ant-form-item-label {
+        width: auto;
+        padding-right: 8px;
+        line-height: 32px;
+      }
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    display: block;
+    margin-bottom: 24px;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}
+
+.followWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.salerecordtitle{
+  display: flex;
+  justify-content: space-between;
+  background-color: #11222222;
+  align-items: center;
+  padding: 5px;
+}
+
+.toolbarwrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkgroupWrapper{
+  position: relative;
+  margin: 0;
+  padding: 4px 0;
+  text-align: left;
+  list-style-type: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.checkgroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkbox{
+  clear: both;
+  margin: 0;
+  padding: 5px 12px;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.topbutton{
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.checkgroupBtn{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}

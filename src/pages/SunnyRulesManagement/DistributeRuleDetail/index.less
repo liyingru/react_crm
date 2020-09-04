@@ -1,0 +1,125 @@
+@import '~antd/es/style/themes/default.less';
+@import '../SunnyRulesList/utils/utils.less';
+
+.main {
+  width: 100%;
+  background: @component-background;
+}
+
+.tableList {
+  margin-left: 40px;
+  .tableListOperator {
+    margin-bottom: 16px;
+
+    button {
+      margin-right: 8px;
+
+    }
+  }
+}
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      display: flex;
+      margin-right: 0;
+      margin-bottom: 24px;
+
+      >.ant-form-item-label {
+        width: auto;
+        padding-right: 8px;
+        line-height: 32px;
+      }
+
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+
+  .submitButtons {
+    display: block;
+    margin-bottom: 24px;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}
+
+.rt_content {
+  display: flex;
+  line-height: 30px;
+  position: relative;
+  width: 100%;
+
+  .labelName {
+    width: 100px;
+  }
+}
+
+.conditionsWrap {
+  width: 100%;
+
+  .wrap {
+    width: 100%;
+    // .labelContet{
+    //   overflow: hidden;
+    //   text-overflow: ellipsis;
+    //   white-space: nowrap;
+    // }
+  }
+}
+
+.wrapSection {
+  width: 100%;
+  display: flex;
+  padding-bottom: 20px;
+  margin-left: -40px;
+  overflow: hidden;
+
+  .label {
+    width: 12%;
+    overflow: hidden;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.85);
+    ;
+
+  }
+
+  .rtContent {
+    width: 88%;
+    overflow: hidden;
+  }
+}
+
+
+.itemTitleStyle {
+  display: flex;
+  font-size: 10px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.itemContentStyle {
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.itemContentSamllStyle {
+  margin-bottom: 5px;
+}

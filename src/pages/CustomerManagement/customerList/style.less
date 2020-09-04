@@ -1,0 +1,40 @@
+@import '~antd/es/style/themes/default.less';
+@import '../utils.less';
+
+.tableList {
+  .tableListOperator {
+    margin-bottom: 16px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.textellipsis{
+  width:100px; /*假设，5个字符的宽度是50*/
+  white-space:nowrap; /*禁止换行*/
+  text-overflow:ellipsis; /*文本超出隐藏*/
+  -o-text-overflow:ellipsis;/*跟上面一样，只是为了兼容其他浏览器*/
+  overflow: hidden; /*隐藏，跟text-overflow配合使用*/
+}
+
+.fieldStyle{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.sucessStyle{
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.innerHeader:global(.ant-page-header){
+  padding: 0 24px 16px 24px !important;
+}
+
+.outerHeader:global(.ant-page-header){
+  padding: 16px 24px 0 24px !important;
+}

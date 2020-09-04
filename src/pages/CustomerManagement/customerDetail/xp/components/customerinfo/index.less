@@ -1,0 +1,42 @@
+@import '~antd/es/style/themes/default.less';
+
+.infoItem{
+    display: flex;
+    align-items: center;
+}
+
+.editingIcon{
+    display: flex;
+    align-items: center;
+}
+
+.areaItem{
+    display: flex;
+    flex-direction: column;
+}
+
+// .formIem :global(.ant-form-item) {
+//     margin-bottom: 18px;
+// }
+
+.formIem {
+    :global {
+      .ant-form-item {
+        display: flex;
+        margin-right: 0;
+        margin-bottom: 12px;
+        > .ant-form-item-label {
+            min-width: 90px;
+        //   width: auto;
+        //   padding-right: 8px;
+          line-height: 32px;
+        }
+        // .ant-form-item-control {
+        //   line-height: 32px;
+        // }
+      }
+    //   .ant-form-item-control-wrapper {
+    //     flex: 1;
+    //   }
+    }
+  }
